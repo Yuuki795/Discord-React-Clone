@@ -1,0 +1,73 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.chat{
+    display: flex;
+    background-color: #363a3f;
+    margin-left:218px;
+    margin-top:70px;
+    margin-bottom:95px;
+}
+
+.chat__message{
+    overflow: hidden scroll;
+    background-color: #363a3f;
+}
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .chat__messages {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.inputBackground {
+    position: fixed;
+    bottom:0;
+    height:95px;
+    width:90vw;
+    margin-right:218px;
+    background-color: #363a3f;
+}
+
+.chat_input{
+    position: absolute;
+    bottom:0;
+    left:0;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px;
+    width:85vw;
+    border-top: 1px solid gray;
+    border-radius:15px;
+    background-color: #484b53;
+}
+
+.chat_input > form > input{
+    padding: 15px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline-width: 0;
+    color: white;
+    font-size: large;
+}
+
+.chat_input > form{
+    flex: 1;
+}
+
+.chat_inputButton{
+    display: none;
+}
+
+.chat_inputIcons > .MuiSvgIcon-root{
+    padding: 5px;
+    align-items:right;
+}
+

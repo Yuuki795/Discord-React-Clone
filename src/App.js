@@ -7,7 +7,6 @@ import { selectUser } from "./features/userSlice"
 import Login from './Login';
 import { auth } from './firebase';
 import { login, logout } from './features/userSlice';
-import {Text, View} from 'react-native';
 
 function App() {
 const dispatch = useDispatch();

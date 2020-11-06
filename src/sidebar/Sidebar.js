@@ -15,6 +15,8 @@ import { useState } from 'react'
 import Popup from 'reactjs-popup'
 import SidebarChannel from './SidebarChannel';
 import "./Sidebar.css"
+
+
 function Sidebar() {
     const user = useSelector(selectUser);
     const [channels, setChannels] = useState([]);
@@ -61,7 +63,7 @@ function Sidebar() {
                 <h4>Text Channels</h4>
                 </div>
 
-            <AddIcon onClick= {menu} className="sidebar_addChannel" />   
+            <AddIcon onClick= {handleAddChannel} className="sidebar_addChannel" />   
             </div>
             <div className="sidebar_channelsList">
                 {channels.map(({ id, channel }) => (

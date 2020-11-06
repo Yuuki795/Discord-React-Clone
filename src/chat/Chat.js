@@ -46,7 +46,7 @@ function Chat() {
     };
 
     return (
-        <div className="chat">
+        <div className="chat" hidden={!channelId}>
             <ChatHeader channelName={channelName} />  
 
             <div className="chat__message">
@@ -58,19 +58,19 @@ function Chat() {
                 />
             ))}
             </div>
-            <div className="inputBackground">
+            <div className="inputBackground" hidden={!channelId}>
                 <div className="chat_input">
                     <AddCircleIcon fontSize="large" />
                     <form>
                         <input 
                         value={input} 
-                        disabled={!channelId}
+                        hidden={!channelId}
                         onChange={(e) => setInput(e.target.value)} 
                         placeholder={`Message #${channelName}`} 
                         />
                         <button 
                         className="chat_inputButton" 
-                        disabled={!channelId}
+                        hidden={!channelId}
                         type='submit'
                         onClick={sendMessage}
                         >

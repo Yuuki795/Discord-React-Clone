@@ -26,9 +26,9 @@
 .inputBackground {
     position: fixed;
     bottom:0;
-    height:95px;
-    width:90vw;
-    margin-right:218px;
+    height: 80px;
+    width: 85vw;
+    margin-right:2180px;
     background-color: #363a3f;
 }
 
@@ -41,8 +41,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    margin: 20px;
-    width:85vw;
+    margin: 10px;
+    width: 85vw;
     border-top: 1px solid gray;
     border-radius:15px;
     background-color: #484b53;
@@ -55,11 +55,11 @@
     border: none;
     outline-width: 0;
     color: white;
-    font-size: large;
+    font-size: medium;
 }
 
 .chat_input > form{
-    flex: 1;
+    flex: 5;
 }
 
 .chat_inputButton{
